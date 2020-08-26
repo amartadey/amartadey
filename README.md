@@ -3,7 +3,7 @@
 
 🏡 [website][website] **|** 
 🐦 [twitter][twitter] **|** 
-
+👔 [linkedin][linkedin]
 
 
 <!--
@@ -23,3 +23,4 @@ Here are some ideas to get you started:
 [banner]: https://user-images.githubusercontent.com/34670651/91280744-d3a9e100-e7a4-11ea-881f-660873418cfc.jpg
 [website]: https://amartadey.com/
 [twitter]: https://twitter.com/Amartadey/
+[linkedin]: https://www.linkedin.com/in/amartadey/
