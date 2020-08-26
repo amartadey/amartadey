@@ -1,10 +1,8 @@
+![amarta dey](https://user-images.githubusercontent.com/34670651/91280744-d3a9e100-e7a4-11ea-881f-660873418cfc.jpg)
+
 ### Hi there 👋
 
 ### I am Amarta
-
-
-
-
 
 <!--
 **amartadey/amartadey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
