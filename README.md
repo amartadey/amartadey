@@ -24,8 +24,7 @@ Here are some ideas to get you started:
 [website]: https://amartadey.com/
 [twitter]: https://twitter.com/Amartadey/
 [linkedin]: https://www.linkedin.com/in/amartadey/
-<br>
-<div align="center">
+
 ![snake gif](https://github.com/amartadey/amartadey/blob/output/github-snake.svg)
-</div>
+
 
