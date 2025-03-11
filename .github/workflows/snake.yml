@@ -1,14 +1,9 @@
 name: GitHub Snake Game
 
 on:
-  # Schedule the workflow to run daily at midnight UTC
   schedule:
     - cron: "0 0 * * *"
-
-  # Allow manual triggering of the workflow
   workflow_dispatch:
-
-  # Trigger the workflow on pushes to the main branch
   push:
     branches:
       - main
@@ -27,10 +22,7 @@ jobs:
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
-          # GitHub username to generate the animation for
           github_user_name: ${{ github.repository_owner }}
-
-          # Define the output files and their configurations
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
@@ -38,19 +30,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: Change SVG snake color to orange (#FF7810)
-      - name: Update SVG Snake Color
+      # Step 3: Debug SVG Content
+      - name: Debug SVG Content
         run: |
-          sed -i 's/stroke="#[^"]*"/stroke="#FF7810"/g' dist/github-snake.svg
-          sed -i 's/stroke="#[^"]*"/stroke="#FF7810"/g' dist/github-snake-dark.svg
+          ls -la dist/
+          cat dist/github-snake.svg || echo "File not found: github-snake.svg"
+          cat dist/github-snake-dark.svg || echo "File not found: github-snake-dark.svg"
         shell: bash
 
-      # Step 4: Deploy to Output Branch
+      # Step 4: Change SVG snake color to orange (#FF7810)
+      - name: Update SVG Snake Color
+        run: |
+          sed -i 's/stroke="#[^"]*"/stroke="#FF7810"/g' dist/github-snake.svg || echo "Failed to update github-snake.svg"
+          sed -i 's/stroke="#[^"]*"/stroke="#FF7810"/g' dist/github-snake-dark.svg || echo "Failed to update github-snake-dark.svg"
+        shell: bash
+
+      # Step 5: Deploy to Output Branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
-          # Optionally, you can set a custom commit message
           commit_message: "Update snake animation [skip ci]"
