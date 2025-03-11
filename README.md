@@ -25,6 +25,6 @@ Here are some ideas to get you started:
 [twitter]: https://twitter.com/Amartadey/
 [linkedin]: https://www.linkedin.com/in/amartadey/
 
-![snake gif](https://github.com/amartadey/amartadey/blob/output/github-snake.svg)
+![snake gif](https://github.com/amartadey/amartadey/blob/output/ocean.gif)
 
 
