@@ -1,7 +1,7 @@
 ![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=25&pause=1000&color=F75C03&center=true&vCenter=true&width=480&lines=Hello,+I+am+a+Amarta+Dey;Website+Designer+and+Developer)
 
 
-[![bg][banner]][website]
+
 
 
 🏡 [website][website] **|** 
